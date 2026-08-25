@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — TextReader</title>
+<meta name="description" content="TextReader privacy policy. No accounts, no analytics, no advertising. All reading data stays on your device.">
+<style>
+  :root{
+    --bg:#FAF6EF; --surface:#FFFFFF; --card:#F4EDE2;
+    --ink:#2B2419; --soft:#6B6154; --line:#E0D6C6; --accent-deep:#8C491A;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.7}
+  .wrap{max-width:720px;margin:0 auto;padding:56px 24px 80px}
+  a{color:var(--accent-deep)}
+  h1{font-size:34px;letter-spacing:-.02em;margin:0 0 6px}
+  .updated{color:var(--soft);font-size:14px;margin:0 0 8px}
+  .back{display:inline-block;margin-bottom:34px;font-size:15px}
+  h2{font-size:21px;margin:38px 0 10px;letter-spacing:-.01em}
+  h3{font-size:17px;margin:26px 0 8px}
+  p,li{color:var(--ink)}
+  .lead{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin:0 0 8px}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:15px}
+  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-weight:600}
+  code{background:var(--card);padding:2px 6px;border-radius:5px;font-size:14px}
+  ul{padding-left:22px}
+  footer{border-top:1px solid var(--line);margin-top:48px;padding-top:24px;color:var(--soft);font-size:14px}
+  @media (prefers-color-scheme: dark){
+    :root{--bg:#181510;--surface:#221E18;--card:#2A251E;--ink:#EDE5D8;--soft:#A99C8A;--line:#3A332A;--accent-deep:#F6A06B}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<a class="back" href="index.html">← TextReader</a>
+
+<h1>Privacy Policy</h1>
+<p class="updated">TextReader · Last updated 4 August 2026</p>
+
+<div class="lead">
+  <p style="margin:0">
+    <strong>The short version.</strong> TextReader is a local, offline-first e-book reader.
+    There are no user accounts, no analytics, no advertising and no crash reporting.
+    Your library, reading position, notes and statistics never leave your device unless
+    you explicitly export them or switch on cloud translation.
+  </p>
+</div>
+
+<h2>Who we are</h2>
+<p>Lyrewa, Kyiv, Ukraine. Contact: <a href="mailto:lyrewa@gmail.com">lyrewa@gmail.com</a>.</p>
+
+<h2>What stays on your device</h2>
+<p>All of the following is stored in the app's private storage and is not transmitted anywhere:</p>
+<ul>
+  <li>your library — file references, covers, shelves, reading progress, bookmarks, highlighted paragraphs and notes;</li>
+  <li>your paper-book catalogue and its cover images;</li>
+  <li>reading statistics — session times and pages read;</li>
+  <li>app settings, including your API key if you enter one;</li>
+  <li>caches that make reopening a book fast.</li>
+</ul>
+<p>
+  Uninstalling the app deletes all of it. The app can also export everything into a single
+  ZIP file, but only when you choose that action and pick where the file goes.
+</p>
+
+<h2>Permissions</h2>
+<table>
+  <tr><th style="width:180px">Permission</th><th>Why</th></tr>
+  <tr>
+    <td>Internet, network state</td>
+    <td>Downloading offline translation models, looking up book metadata by ISBN, and cloud AI translation — all only when you use those features.</td>
+  </tr>
+  <tr>
+    <td>Camera</td>
+    <td>Scanning a book's barcode (ISBN) and photographing a cover for your paper catalogue. Images are processed on the device and are never uploaded.</td>
+  </tr>
+</table>
+<p>The app does not request location, contacts, microphone or access to your photo library.</p>
+
+<h2>When data does leave your device</h2>
+
+<h3>1. Cloud AI translation — the one that matters</h3>
+<p>
+  If you switch the translation engine to <strong>cloud AI</strong> and enter your own API key,
+  the app sends <strong>the text of the pages you translate</strong> directly to the provider you
+  selected. This is a direct connection from your device to that provider; it does not pass
+  through our servers, and we never see the text or your key.
+</p>
+<ul>
+  <li>Google Gemini — <a href="https://ai.google.dev/gemini-api/terms">terms</a></li>
+  <li>OpenAI — <a href="https://openai.com/policies/">policies</a></li>
+  <li>Anthropic — <a href="https://www.anthropic.com/legal/consumer-terms">terms</a></li>
+  <li>any OpenAI-compatible endpoint you configure yourself</li>
+</ul>
+<p>
+  Your API key is stored only on your device and is sent only to that provider.
+  <strong>If you do not enable this feature, no book text is ever transmitted.</strong>
+</p>
+
+<h3>2. On-device translation</h3>
+<p>
+  The offline engine (Google ML Kit) downloads language models from Google the first time you
+  use a language pair. Translation itself then runs entirely on the device — the text of your
+  books is not sent anywhere. Model downloads are subject to
+  <a href="https://developers.google.com/ml-kit/language/translation/translation-terms">Google's terms</a>.
+</p>
+
+<h3>3. Book metadata lookup</h3>
+<p>
+  When you scan a barcode or search for a paper book, the app sends <strong>only the ISBN or the
+  search words you typed</strong> to public catalogues:
+</p>
+<ul>
+  <li>Google Books API — <a href="https://policies.google.com/privacy">privacy policy</a></li>
+  <li>Open Library — <a href="https://openlibrary.org/privacy">privacy policy</a></li>
+  <li>Yakaboo (Ukrainian book retailer, used as a fallback source) — <a href="https://www.yakaboo.ua">yakaboo.ua</a></li>
+  <li>DuckDuckGo HTML search (fallback cover lookup) — <a href="https://duckduckgo.com/privacy">privacy policy</a></li>
+</ul>
+<p>
+  No identifier of you or your device is attached to these requests. They happen only when you
+  actively add a paper book.
+</p>
+
+<h3>4. Cover images</h3>
+<p>
+  Cover images are fetched from Open Library's public cover server
+  (<code>covers.openlibrary.org</code>) by ISBN, and cached on your device.
+</p>
+
+<h2>What we never collect</h2>
+<p>
+  We operate no servers and receive no data from the app. There is no telemetry, no advertising
+  SDK, no third-party tracker and no crash reporting library in the build.
+</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children under 13 and collects no personal data from anyone.</p>
+
+<h2>Your rights</h2>
+<p>
+  Because all data is local, you are in direct control of it: export it from Settings → Backup,
+  or delete it by clearing app data or uninstalling. If you are in the EEA or UK, GDPR rights
+  (access, erasure, portability) are satisfied by these controls; there is no server-side copy
+  for us to act on.
+</p>
+
+<h2>Changes</h2>
+<p>
+  Material changes to this policy will be reflected in the "Last updated" date and, where the
+  change affects data transmission, announced in the app's release notes.
+</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:lyrewa@gmail.com">lyrewa@gmail.com</a></p>
+
+<footer>
+  TextReader © 2026 · <a href="index.html">Back to the project</a>
+</footer>
+
+</div>
+</body>
+</html>
